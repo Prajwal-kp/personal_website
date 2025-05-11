@@ -4,7 +4,7 @@ export const navItems: NavItem[] = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
+  { label: "Reports", href: "#reports" },
   { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
@@ -64,21 +64,8 @@ export const experiences: Experience[] = [
     description:
       "Mentored junior security professionals on cloud security best practices and incident response methodologies.",
     achievements: [
-      "Guided 12 junior security professionals in developing practical incident response skills",
-      "Facilitated hands-on workshops on cloud security tools and methodologies",
-      "Developed training materials that were adopted company-wide",
-    ],
-  },
-  {
-    company: "Worldlink & Locus",
-    role: "Volunteer Coordinator",
-    period: "November 2023 - December 2023",
-    description:
-      "Coordinated security volunteer efforts and contributed to community education initiatives.",
-    achievements: [
-      "Organized a team of 15 volunteers for a community cybersecurity awareness program",
-      "Developed educational materials on basic security hygiene for non-technical audiences",
-      "Facilitated workshops that reached over 200 community members",
+      "Successfully led the development of the Gwitter project using PHP, HTML, and CSS, demonstrating strong web development leadership.",
+      "Enhanced cybersecurity knowledge through intensive training on OpenVAS scans and SQL injection.",
     ],
   },
 ];

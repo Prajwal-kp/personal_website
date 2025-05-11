@@ -114,7 +114,6 @@ const HeroSection: React.FC = () => {
                 className="h-28"
               />
               <img src={apisec} alt="API Security" className="h-28" />
-              ``
             </div>
           </div>
         </div>
