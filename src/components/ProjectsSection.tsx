@@ -27,7 +27,8 @@ const ProjectsSection: React.FC = () => {
 
   return (
     <section id="reports" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-5 pointer-events-none"></div>
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             Research & Report
@@ -100,7 +101,7 @@ const ProjectsSection: React.FC = () => {
               </div>
               
               {/* Project Details */}
-              <div className="p-6">
+              <div className="p-6 relative z-10">
                 <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
                   {project.title}
                 </h3>

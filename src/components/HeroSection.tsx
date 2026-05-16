@@ -21,30 +21,42 @@ const HeroSection: React.FC = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center pt-12 md:pt-0 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800"
+      className="min-h-screen relative flex items-center pt-12 md:pt-0 bg-slate-50 dark:bg-[#0a0f18] overflow-hidden"
     >
-      <div className="container mx-auto px-4 md:px-6 py-12 md:py-24">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          {/* Profile image */}
+      {/* Cyber Background elements */}
+      <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+      <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 dark:opacity-20 pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-24 relative z-10">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+          {/* Profile image (Removed) */}
+          {/*
           <div className="w-full md:w-2/5 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-600 dark:border-blue-400 shadow-xl">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden border border-cyan-500/50 shadow-[0_0_30px_rgba(6,182,212,0.3)] bg-[#0f172a]/80 backdrop-blur-sm transform rotate-45">
+              <div className="-rotate-45 w-full h-full flex items-center justify-center">
               <img
                 src={prajwal}
                 alt="Prajwal Kumar Pandey"
-                className="w-full h-full object-cover object-[100%_20%]"
+                className="w-[140%] h-[140%] max-w-none object-cover object-[100%_20%]"
               />
-              <div className="absolute inset-0 bg-blue-600 dark:bg-blue-500 opacity-10 "></div>
+              </div>
+              <div className="absolute inset-0 bg-cyan-600 dark:bg-cyan-500 opacity-20 mix-blend-overlay"></div>
             </div>
           </div>
+          */}
 
           {/* Hero content */}
-          <div className="w-full md:w-3/5 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
+          <div className="w-full md:w-3/4 text-center md:text-left flex flex-col items-center md:items-start mx-auto">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-300 text-xs font-mono tracking-widest mb-6 border border-cyan-200 dark:border-cyan-800/50 shadow-[0_0_15px_rgba(6,182,212,0.2)]">
+              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> SYSTEM.ONLINE
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-slate-900 dark:text-white tracking-tight font-mono">
               Prajwal Kumar Pandey
             </h1>
 
-            <h2 className="text-xl md:text-2xl font-medium mb-6 text-blue-600 dark:text-blue-400">
-              Security Engineer
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 font-mono tracking-wide">
+              &gt; Security Engineer
             </h2>
 
             <div className="min-h-[80px] mb-8">
@@ -58,7 +70,7 @@ const HeroSection: React.FC = () => {
               <a
                 href={resume}
                 download
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-mono font-semibold rounded-lg transition-all shadow-[0_0_15px_rgba(6,182,212,0.3)] hover:shadow-[0_0_25px_rgba(6,182,212,0.5)] uppercase tracking-wider relative overflow-hidden group"
               >
                 <Download size={20} />
                 Download Resume

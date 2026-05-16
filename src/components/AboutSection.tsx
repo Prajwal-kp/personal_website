@@ -18,21 +18,22 @@ const AboutSection: React.FC = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="about" className="py-20 relative bg-slate-50 dark:bg-[#0a0f18] border-t border-slate-200 dark:border-slate-800">
+      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-5 pointer-events-none"></div>
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-            About Me
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white font-mono tracking-tight uppercase">
+            <span className="text-cyan-500">{'>'}</span> System.Profile
           </h2>
-          <div className="w-24 h-1 bg-blue-600 dark:bg-blue-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
         </div>
 
         {/* Summary & Expertise */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Summary */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
+            <h3 className="text-xl font-mono mb-6 text-slate-800 dark:text-cyan-400 uppercase tracking-widest border-b border-slate-200 dark:border-slate-800 pb-2">
               Professional Summary
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
@@ -53,7 +54,7 @@ const AboutSection: React.FC = () => {
 
           {/* Expertise Icons */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
+            <h3 className="text-xl font-mono mb-6 text-slate-800 dark:text-cyan-400 uppercase tracking-widest border-b border-slate-200 dark:border-slate-800 pb-2">
               Key Expertise Areas
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -101,14 +102,14 @@ const AboutSection: React.FC = () => {
 
         {/* Skills List Only (No Progress) */}
         <div className="mt-16">
-          <h3 className="text-2xl font-semibold mb-6 text-center text-gray-800 dark:text-gray-200">
-            Technical Skills
+          <h3 className="text-2xl font-mono mb-8 text-center text-slate-900 dark:text-white uppercase tracking-widest">
+            <span className="text-cyan-500">~/</span> Technical_Capabilities
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {Object.entries(groupedSkills).map(([category, categorySkills]) => (
               <div
                 key={category}
-                className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6"
+                className="bg-white/70 dark:bg-[#0f172a]/80 backdrop-blur-md rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg p-6 hover:shadow-[0_0_15px_rgba(6,182,212,0.15)] transition-shadow"
               >
                 <h4 className="text-lg font-medium mb-4 text-gray-800 dark:text-gray-200 capitalize flex items-center gap-2">
                   {category === "cloud" && (
