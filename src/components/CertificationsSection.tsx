@@ -20,6 +20,7 @@ const CertificationsSection: React.FC = () => {
       <h1 className="text-center font-bold text-2xl my-5">Certifications</h1>
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          {/* 
           {certificateImages.map((image, index) => (
             <div
               key={index}
@@ -33,9 +34,11 @@ const CertificationsSection: React.FC = () => {
               />
             </div>
           ))}
+          */}
         </div>
       </div>
 
+      {/* 
       {isModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
@@ -59,6 +62,7 @@ const CertificationsSection: React.FC = () => {
           </div>
         </div>
       )}
+      */}
     </section>
   );
 };
