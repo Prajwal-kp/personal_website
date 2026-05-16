@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Send, Linkedin, Github, Twitter, Mail, Calendar } from "lucide-react";
+import { Send, Mail, Calendar } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { ContactFormData } from "../types";
 
 const ContactSection: React.FC = () => {
@@ -224,7 +225,7 @@ const ContactSection: React.FC = () => {
                   className="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                 >
                   <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg">
-                    <Linkedin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                    <FaLinkedin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-800 dark:text-gray-200">
@@ -243,7 +244,7 @@ const ContactSection: React.FC = () => {
                   className="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                 >
                   <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg">
-                    <Github className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                    <FaGithub className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-800 dark:text-gray-200">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github, Filter } from 'lucide-react';
+import { ExternalLink, Filter } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { projects } from '../data';
 import { Project } from '../types';
 
@@ -91,7 +92,7 @@ const ProjectsSection: React.FC = () => {
                         className="bg-white dark:bg-gray-800 p-2 rounded-full hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
                         aria-label="View Source Code"
                       >
-                        <Github className="w-5 h-5 text-gray-800 dark:text-gray-200" />
+                        <FaGithub className="w-5 h-5 text-gray-800 dark:text-gray-200" />
                       </a>
                     )}
                   </div>
